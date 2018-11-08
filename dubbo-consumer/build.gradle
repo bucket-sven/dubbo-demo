@@ -1,0 +1,7 @@
+//apply plugin: "war"
+archivesBaseName = 'dubbo-consumer'
+
+dependencies { 
+  // 依赖 core 模块
+  compile project(":dubbo-producer")  
+}

@@ -1,4 +1,4 @@
-package com.sven.dubbo.producer.service;
+package com.sven.dubbo.service;
 
 /**
  * @author sven

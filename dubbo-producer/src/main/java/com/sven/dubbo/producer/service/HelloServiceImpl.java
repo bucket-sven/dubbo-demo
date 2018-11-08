@@ -1,13 +1,15 @@
 package com.sven.dubbo.producer.service;
 
+import com.alibaba.dubbo.config.annotation.Service;
+import com.sven.dubbo.service.HelloService;
+
 /**
  * @author sven
  */
-public class HelloServiceImpl implements HelloService {
+@Service(timeout = 5000)
+public class HelloServiceImpl implements HelloService  {
     @Override
     public String sayHello(String name) {
-        String ret = "Hello, " + name;
-        System.out.println(ret);
-        return ret;
+        return "Hello, " + name;
     }
 }

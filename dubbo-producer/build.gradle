@@ -1,1 +1,6 @@
 archivesBaseName = 'dubbo-producer'
+
+dependencies {
+    // 依赖 dubbo-interface 模块
+    compile project(":dubbo-interface")
+}
